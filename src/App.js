@@ -1,4 +1,5 @@
 import Header from './components/ui/Header';
+import Search from './components/ui/Search';
 import CharacterGrid from './components/Characters/CharacterGrid';
 import './App.css';
 import React,{useState,useEffect} from 'react';
@@ -28,6 +29,7 @@ const App = () => {
   return (
     <div className="container">
       <Header/>
+      <Search/>
       <CharacterGrid isLoading={isLoading} items={items}/>
     </div>
   );
